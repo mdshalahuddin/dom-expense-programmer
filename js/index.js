@@ -5,5 +5,7 @@ calculateButton.addEventListener("click", function () {
     const software = parseFloat(document.getElementById("software").value);
     const courses = parseFloat(document.getElementById("courses").value);
     const internet = parseFloat(document.getElementById("internet").value);
-    console.log({income,software,courses,internet});
+    const totalExpenses =  software + courses + internet;
+    const balance = income - totalExpenses;
+    console.log({totalExpenses,balance});
 })
